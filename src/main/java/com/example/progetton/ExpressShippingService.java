@@ -5,9 +5,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Qualifier("expressShippingService")
-public class ExpressShippingService {
+public class ExpressShippingService implements ShippingService{
     
-    @Ovveride
+    @Override
     public double calculateShipping(String country, double weight) {
         switch (country){
             case "USA":
