@@ -7,7 +7,7 @@ import com.example.progetton.ShippingService;
 import com.example.progetton.StandardShippingService;
 
 @Configuration
-public class AppConfig{
+public class AppConfig {
     @Bean(name = "expressShippingService")
     public ShippingService expressShippingService() {
         return new CustomExpressShippingService();
